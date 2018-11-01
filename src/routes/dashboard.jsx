@@ -9,6 +9,9 @@ import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
+import Calendar from "views/Calendar/Calendar.jsx";
+import UsersRM from "views/usersrm/UsersRM.jsx";
+import UsersAdmin from "views/usersadmin/UsersAdmin.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
@@ -41,10 +44,31 @@ const dashboardRoutes = [
   },
   {
     path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
+    sidebarName: "Notifications & Doc",
+    navbarName: "Notifications & Doc",
     icon: Notifications,
     component: NotificationsPage
+  },
+  {
+    path: "/calendar",
+    sidebarName: "Calendar",
+    navbarName: "Calendar",
+    icon: "calendar_today",
+    component: Calendar
+  },
+  {
+    path: "/usersadmin",
+    sidebarName: "Users Admin",
+    navbarName: "Users Admin",
+    icon: "group",
+    component: UsersAdmin
+  },
+  {
+    path: "/usersrm",
+    sidebarName: "Users RM",
+    navbarName: "Users RM",
+    icon: "group",
+    component: UsersRM
   },
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];

@@ -44,7 +44,7 @@ const styles = {
   }
 };
 
-class Notifications extends React.Component {
+class Calendar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -305,4 +305,4 @@ class Notifications extends React.Component {
   }
 }
 
-export default withStyles(styles)(Notifications);
+export default withStyles(styles)(Calendar);

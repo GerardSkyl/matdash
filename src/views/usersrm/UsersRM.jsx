@@ -39,7 +39,7 @@ const styles = {
   }
 };
 
-function TableList(props) {
+function UsersRM(props) {
   const { classes } = props;
   return (
     <GridContainer>
@@ -71,4 +71,4 @@ function TableList(props) {
   );
 }
 
-export default withStyles(styles)(TableList);
+export default withStyles(styles)(UsersRM);
